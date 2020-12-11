@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #8d6e63;
+  font-family: 'Special Elite', Courier, monospace;
+  /* height: 100vh; */
+}
+
+h1 {
+  text-align: center;
+  font-weight: 400;
+  margin-top: 3rem;
+  font-size: 4rem;
+  color: #e1cfe7ff;
+}
+
+h3 {
+  text-align: center;
+  font-size: 2rem;
+}
+
+h3 span {
+  padding: 0 1rem;
+}
+
+#wrapper {
+  display: flex;
+  justify-content: space-around;
+  margin: 8rem auto 0 auto;
+  max-width: 1200px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  /* margin: auto; */
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container #riddle {
+  display: flex;
+  font-size: 3rem;
+}
+
+.container #riddle div {
+  margin: .2rem;
+  border-bottom: 5px solid black;
+  width: 2rem; 
+  height: 3rem;
+}
+
+.container small {
+  color: rgb(114, 10, 10);
+  font-size: 2rem;
+}
+
+.container #letters {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container #letters button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  
+  cursor: pointer;
+  font-size: 2rem;
+  padding: .8rem .5rem .3rem .5rem;
+  margin: .2rem;
+  width: 3rem;
+  background: #e1cfe7ff;
+  border: none;
+  font-family: 'Special Elite', Courier, monospace;
+  box-shadow: 3px 3px 5px #2228;
+}
+
+.container #letters button:hover {
+  background: rgb(193, 180, 197);
+}
+
+.container #letters button:active {
+  box-shadow: none;
+}
+
+.container #letters button:focus {
+  outline: none;
+}
+
+
+.container .new-game-btn {
+  border-radius: 5px;
+  cursor: pointer;
+  background: #e1cfe7ff;
+  border: none;
+  font-size: 2rem;
+  font-family: 'Special Elite', Courier, monospace;
+  padding: .8rem .5rem .3rem .5rem;
+  box-shadow: 3px 3px 5px #2228;
+}
+
+.container .new-game-btn:hover {
+  background: rgb(193, 180, 197);
+}
+
+.container .new-game-btn:active {
+  box-shadow: none;
+}
+
+.container .new-game-btn:focus {
+  outline: none;
+}
+
+
+img {
+  width: 250px;
+}
+
+@media screen and (max-height: 680px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  #wrapper {
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+  }
+
+  #image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+  }
+
+  #letters {
+    margin: 2rem 0;
+  }
+
+  html {
+    font-size: 12px;
+  }
+}
+
+
+@media screen and (max-width: 460px) {
+  html {
+    font-size: 9px;
+  }
+
+  #image {
+    width: 200px;
+  }
+}
